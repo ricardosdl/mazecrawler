@@ -8,6 +8,11 @@ SetErrorMode(2)
 #include "MazeGrid.agc"
 #include "Util.agc"
 
+function UpdateGame(frameTime as float)
+    
+endfunction
+
+
 // set window properties
 SetWindowTitle( "MazeCrawler" )
 SetWindowSize( 1024, 768, 0 )
@@ -21,7 +26,7 @@ SetVSync(1)
 SetScissor( 0,0,0,0 ) // use the maximum available screen space, no black borders
 UseNewDefaultFonts( 1 ) // since version 2.0.22 we can use nicer default fonts
 
-MazeGrid[0, 0].CellType = 4
+GameMazeGrid[0, 0].CellType = 4
 
 //ClearMazeGrid(MazeGrid)
 
@@ -29,7 +34,11 @@ MazeGrid[0, 0].CellType = 4
 
 do
     Print( ScreenFPS() )
-    Print(MazeGrid[0, 0].CellType)
-    Print(ReturnTrue())
+    //read input here
+    
+    UpdateGame(GetFrameTime())
+    
+    //Draw here
+    
     Sync()
 loop

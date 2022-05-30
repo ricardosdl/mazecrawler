@@ -52,8 +52,8 @@ FILE_1=MazeGrid.agc;-1
 FILE_2=Util.agc;-1
 
 [files]
-FILE_NAME_0=0;main.agc;883;0
-FILE_NAME_1=1;MazeGrid.agc;430;1
+FILE_NAME_0=1;main.agc;882;0
+FILE_NAME_1=0;MazeGrid.agc;430;1
 FILE_NAME_2=0;Util.agc;259;2
 
 [project]
